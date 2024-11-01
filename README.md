@@ -1,5 +1,16 @@
+# Typescript - Stephen grider - Typescript complete developers guide
+
+### NOTE: Section 01 to Section 09 - Basics of Typescript
+- Basics of Typescript -77 lessons (77 lessons (5h 41min))
+- NOTE: this section has been extracted to its own repository: [typescript-stephengrider-basics-of-typescript](https://github.com/clarklindev/typescript-stephengrider-basics-of-typescript)
+- this section is also covered in courses:
+  - [microservices-with-node-js-and-react](https://www.udemy.com/course/microservices-with-node-js-and-react/) - section 25: appendix B - basics of typescript  
+  - [typescript-the-complete-developers-guide](https://www.udemy.com/course/typescript-the-complete-developers-guide) - section 01 to section 09
+  - [react-and-typescript-build-a-portfolio-project](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project) - section 26: Appendix:Typescript
+  
+---
 ## Table of contents
-### Section 01 to Section 09 - Basics of Typescript (77 lessons)
+### Section 01 to Section 09
 - [Section 01 - Getting started with TypeScript](#section-01-getting-started-with-typescript)
 - [Section 02 - What is a Type System](#section-02-what-is-a-type-system)
 - [Section 03 - Type Annotations in Action](#section-03-type-annotations-in-action)
