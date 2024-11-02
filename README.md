@@ -4,6 +4,7 @@
 
 - Basics of Typescript -77 lessons (77 lessons (5h 41min))
 - NOTE: this section has been extracted to its own repository: [typescript-stephengrider-basics-of-typescript](https://github.com/clarklindev/typescript-stephengrider-basics-of-typescript)
+- moved and labelled as `Section 01 to Section 09 - Basics of Typescript`
 - this section is also covered in courses:
   - [microservices-with-node-js-and-react](https://www.udemy.com/course/microservices-with-node-js-and-react/) - section 25: appendix B - basics of typescript
   - [typescript-the-complete-developers-guide](https://www.udemy.com/course/typescript-the-complete-developers-guide) - section 01 to section 09
@@ -15,82 +16,39 @@
 
 ### Section 01 to Section 09 - basics of typescript
 
-- [Section 01 - Getting started with TypeScript](#section-01-getting-started-with-typescript)
-- [Section 02 - What is a Type System](#section-02-what-is-a-type-system)
-- [Section 03 - Type Annotations in Action](#section-03-type-annotations-in-action)
-- [Section 04 - Annotations with Functions and Objects](#section-04-annotations-with-functions-and-objects)
-- [Section 05 - Mastering Typed Arrays](#section-05-mastering-typed-arrays)
-- [Section 06 - Tuples in TypeScript](#section-06-tuples-in-typescript)
-- [Section 07 - The All Important Interface](#section-07-the-all-important-interface)
-- [Section 08 - Building Functionality with Classes](#section-08-building-functionality-with-classes)
-- [Section 09 - Design Patterns with TypeScript](#section-09-design-patterns-with-typescript)
+- [Section 01 - Getting started with TypeScript](#section-01---getting-started-with-typescript)
+- [Section 02 - What is a Type System](#section-02---what-is-a-type-system)
+- [Section 03 - Type Annotations in Action](#section-03---type-annotations-in-action)
+- [Section 04 - Annotations with Functions and Objects](#section-04---annotations-with-functions-and-objects)
+- [Section 05 - Mastering Typed Arrays](#section-05---mastering-typed-arrays)
+- [Section 06 - Tuples in TypeScript](#section-06---tuples-in-typescript)
+- [Section 07 - The All Important Interface](#section-07---the-all-important-interface)
+- [Section 08 - Building Functionality with Classes](#section-08---building-functionality-with-classes)
+- [Section 09 - Design Patterns with TypeScript](#section-09---design-patterns-with-typescript)
 
 ### Section 10 - Section 21
 
-- [Section 10 - More Design Patterns](#section-10-more-design-patterns)
-- [Section 11 - Reusable Code](#section-11-reusable-code)
-- [Section 13 - Let's Build a Framework](#section-13-lets-build-a-framework)
-- [Section 14 - Express + TypeScript Integration](#section-14-express-typescript-integration)
-- [Section 15 - Decorators](#section-15-decorators)
-- [Section 16 - Advanced Express and TS Integration](#section-16-advanced-express-and-ts-integration)
-- [Section 17 - React and Redux Class Components with TypeScript](#section-17-react-and-redux-class-components-with-typescript)
-- [Section 18 - React Functional Components with TypeScript](#section-18-react-functional-components-with-typescript)
-- [Section 19 - Redux with Functional Components and TypeScript](#section-19-redux-with-functional-components-and-typescript)
-- [Section 20 - Extras](#section-20-extras)
+- [Section 10 - More Design Patterns](#section-10---more-design-patterns)
+- [Section 11 - Reusable Code](#section-11---reusable-code)
+- [Section 13 - Let's Build a Framework](#section-13---lets-build-a-framework)
+- [Section 14 - Express + TypeScript Integration](#section-14---express-typescript-integration)
+- [Section 15 - Decorators](#section-15---decorators)
+- [Section 16 - Advanced Express and TS Integration](#section-16---advanced-express-and-ts-integration)
+- [Section 17 - React and Redux Class Components with TypeScript](#section-17---react-and-redux-class-components-with-typescript)
+- [Section 18 - React Functional Components with TypeScript](#section-18---react-functional-components-with-typescript)
+- [Section 19 - Redux with Functional Components and TypeScript](#section-19---redux-with-functional-components-and-typescript)
+- [Section 20 - Extras](#section-20---extras)
 
 ---
 
 ### Section 01 - getting started with typescript
 
 1. How to Get Help (1min)
-
-- @ste_grider
-- udemy Q&a
-
 2. Join Our Community! (1min)
 3. Course Resources (1min)
 4. Typescript Overview (6min)
-
-- adding a type-system
-- catch errors during development
-- adding 'type annotations'
-- no performance optimizations
-
-### running the code
-
-- typescript (js + annotations) -> typescript compiler -> js
-
 5. Environment Setup (8min)
-
-- install typescript compiler -> `npm install -g typescript ts-node`
-
-  - ts-node -> allows compile AND run code using single command
-  - `tsc --help`
-  - vscode typescript add-on
-  - install vs-code prettier
-  - add .prettierrc
-
-  ```.prettierrc
-  {
-  "tabWidth": 2,
-  "useTabs": false,
-  "printWidth": 80,
-  "semi": true,
-  "singleQuote": true,
-  "trailingComma": "es5"
-  }
-  ```
-
-  - enable format on save:
-    `CTRL + ,` -> search and enable 'Format On Save'
-
 6. Important Axios and TypeScript Version Information (1min)
-
-- when using latest axios need types: `npm install --save-dev @types/node`
-- TS 5.6 has breaking changes (ts-node not nsync)
-- install typscript v5.5 `npm install -g typescript@5.5`
-  - this fixes `Cannot use import statement outside a module` errors
-
 7. A First App (5min)
 8. Executing Typescript Code (5min)
 9. One Quick Change (4min)
