@@ -1,16 +1,20 @@
 # Typescript - Stephen grider - Typescript complete developers guide
 
 ### NOTE: Section 01 to Section 09 - Basics of Typescript
+
 - Basics of Typescript -77 lessons (77 lessons (5h 41min))
 - NOTE: this section has been extracted to its own repository: [typescript-stephengrider-basics-of-typescript](https://github.com/clarklindev/typescript-stephengrider-basics-of-typescript)
 - this section is also covered in courses:
-  - [microservices-with-node-js-and-react](https://www.udemy.com/course/microservices-with-node-js-and-react/) - section 25: appendix B - basics of typescript  
+  - [microservices-with-node-js-and-react](https://www.udemy.com/course/microservices-with-node-js-and-react/) - section 25: appendix B - basics of typescript
   - [typescript-the-complete-developers-guide](https://www.udemy.com/course/typescript-the-complete-developers-guide) - section 01 to section 09
   - [react-and-typescript-build-a-portfolio-project](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project) - section 26: Appendix:Typescript
-  
+
 ---
+
 ## Table of contents
-### Section 01 to Section 09
+
+### Section 01 to Section 09 - basics of typescript
+
 - [Section 01 - Getting started with TypeScript](#section-01-getting-started-with-typescript)
 - [Section 02 - What is a Type System](#section-02-what-is-a-type-system)
 - [Section 03 - Type Annotations in Action](#section-03-type-annotations-in-action)
@@ -22,6 +26,7 @@
 - [Section 09 - Design Patterns with TypeScript](#section-09-design-patterns-with-typescript)
 
 ### Section 10 - Section 21
+
 - [Section 10 - More Design Patterns](#section-10-more-design-patterns)
 - [Section 11 - Reusable Code](#section-11-reusable-code)
 - [Section 13 - Let's Build a Framework](#section-13-lets-build-a-framework)
@@ -32,15 +37,60 @@
 - [Section 18 - React Functional Components with TypeScript](#section-18-react-functional-components-with-typescript)
 - [Section 19 - Redux with Functional Components and TypeScript](#section-19-redux-with-functional-components-and-typescript)
 - [Section 20 - Extras](#section-20-extras)
+
 ---
 
 ### Section 01 - getting started with typescript
+
 1. How to Get Help (1min)
+
+- @ste_grider
+- udemy Q&a
+
 2. Join Our Community! (1min)
 3. Course Resources (1min)
 4. Typescript Overview (6min)
+
+- adding a type-system
+- catch errors during development
+- adding 'type annotations'
+- no performance optimizations
+
+### running the code
+
+- typescript (js + annotations) -> typescript compiler -> js
+
 5. Environment Setup (8min)
+
+- install typescript compiler -> `npm install -g typescript ts-node`
+
+  - ts-node -> allows compile AND run code using single command
+  - `tsc --help`
+  - vscode typescript add-on
+  - install vs-code prettier
+  - add .prettierrc
+
+  ```.prettierrc
+  {
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 80,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5"
+  }
+  ```
+
+  - enable format on save:
+    `CTRL + ,` -> search and enable 'Format On Save'
+
 6. Important Axios and TypeScript Version Information (1min)
+
+- when using latest axios need types: `npm install --save-dev @types/node`
+- TS 5.6 has breaking changes (ts-node not nsync)
+- install typscript v5.5 `npm install -g typescript@5.5`
+  - this fixes `Cannot use import statement outside a module` errors
+
 7. A First App (5min)
 8. Executing Typescript Code (5min)
 9. One Quick Change (4min)
@@ -48,6 +98,7 @@
 11. Catching More Errors! (5min)
 
 ### Section 02 - What is a type system
+
 12. Do Not Skip - Course Overview (4min)
 13. Types (5min)
 14. More on Types (6min)
@@ -55,6 +106,7 @@
 16. Where Do We Use Types? (1min)
 
 ### Section 03 - Type annotations in action
+
 17. Type Annotations and Inference (2min)
 18. Annotations with Variables (5min)
 19. Object Literal Annotations (7min)
@@ -66,6 +118,7 @@
 25. When Inference Doesn't Work (5min)
 
 ### Section 04 - Annotations with functions and objects
+
 26. More on Annotations Around Functions (5min)
 27. Inference Around Functions (6min)
 28. Annotations for Anonymous Functions (2min)
@@ -74,17 +127,20 @@
 31. Annotations Around Objects (7min)
 
 ### Section 05 - Mastering Typed Arrays
+
 32. Arrays in Typescript (5min)
 33. Why Typed Arrays? (5min)
 34. Multiple Types in Arrays (3min)
 35. When to Use Typed Arrays (1min)
 
 ### Section 06 - Tuples in Typescript
+
 36. Tuples in Typescript (4min)
 37. Tuples in Action (5min)
 38. Why Tuples? (3min)
 
 ### Section 07 - The all important interface
+
 39. Interfaces (1min)
 40. Long Type Annotations (5min)
 41. Fixing Long Annotations with Interfaces (5min)
@@ -94,6 +150,7 @@
 45. General Plan with Interfaces (3min)
 
 ### Section 08 - Building functionality with classes
+
 46. Classes (4min)
 47. Basic Inheritance (3min)
 48. Instance Method Modifiers (7min)
@@ -102,6 +159,7 @@
 51. Where to Use Classes (1min)
 
 ### Section 09 - Design Patterns with Typescript
+
 52. Updated Parcel Instructions (1min)
 53. App Overview (3min)
 54. Bundling with Parcel (5min)
@@ -132,6 +190,7 @@
 ---
 
 ### Section 10 - More design patterns
+
 78. App Overview (2min)
 79. Configuring the TS Compiler (8min)
 80. Concurrent Compilation and Execution (5min)
@@ -154,10 +213,11 @@
 97. Issues with Inheritance (7min)
 98. Abstract Classes (6min)
 99. Why Use Abstract Classes? (5min)
-100. Solving All Issues with Abstract Classes (4min)
-101. Interfaces vs Abstract Classes (3min)
+100.  Solving All Issues with Abstract Classes (4min)
+101.  Interfaces vs Abstract Classes (3min)
 
 ### Section 11 - Reusable code
+
 102. Project Overview (2min)
 103. Project Setup (6min)
 104. CSV Data (1min)
@@ -197,12 +257,14 @@
 138. App Wrapup (4min)
 
 ### Section 12 - Advanced (Generics)
+
 139. More on Generics (5min)
 140. Type Inference with Generics (3min)
 141. Function Generics (6min)
 142. Generic Constraints (6min)
 
 ### Section 13 - Lets build a framework
+
 143. App Overview (3min)
 144. Reminder on Using Parcel with npx (1min)
 145. Parcel Setup (3min)
@@ -281,6 +343,7 @@
 218. App Wrapup (4min)
 
 ### Section 14 - Express+Typescript Integration
+
 219. Typescript with JS Libraries (6min)
 220. App Overview (3min)
 221. Project Setup (4min)
@@ -299,6 +362,7 @@
 234. Prototypes Reminder (9min)
 
 ### Section 15 - decorators
+
 235. Note about target environment in tsconfig (1min)
 236. Decorators in Typescript (7min)
 237. Details on Decorators (8min)
@@ -309,6 +373,7 @@
 242. More on Decorators (8min)
 
 ### Section 16 - Advanced Express and TS Integration
+
 243. A Quick Disclaimer (1min)
 244. Project Overview (8min)
 245. Why is This Hard? (7min)
@@ -335,6 +400,7 @@
 266. App Wrapup (1min)
 
 ### Section 17 - React and Redux class components with Typescript
+
 267. React and Redux Overview (6min)
 268. App Overview (2min)
 269. Generating the App (1min)
@@ -363,6 +429,7 @@
 292. App Wrapup (4min)
 
 ### Section 18 - React Functional Components with Typescript
+
 293. Generating TypeScript Enabled Projects (1min)
 294. ReactDOM warning with React v18 (1min)
 295. File Extensions and starting Up React (5min)
@@ -383,6 +450,7 @@
 310. More on Refs (4min)
 
 ### Section 19 - Redux with Functional Components and Typescript
+
 311. App Overview (2min)
 312. Updated Install Command and Versions for React 18 (1min)
 313. Project Setup (2min)
